@@ -59,12 +59,17 @@ namespace SnakeAndLeaderProblem
                         }
                 }
                      
-                        if (position < 0)
-                        {
-                            position = 0;
-                            Console.WriteLine("plyer1 have to restart the game from position:"+position);
-                        }
-                        Console.WriteLine("current position of the player is:" + position);
+                 if (position < 0)
+                  {
+                     position = 0;
+                     Console.WriteLine("plyer1 have to restart the game from position:"+position);
+                  }
+                 if (position > 100)
+                 {
+                    position = position - RollDice;
+                    Console.WriteLine("Your chance is skip stay on same position:" + position);
+                 }
+                Console.WriteLine("current position of the player is:" + position);
                         Console.WriteLine(" ");
                
             }
