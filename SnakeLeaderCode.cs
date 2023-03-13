@@ -68,6 +68,7 @@ namespace SnakeAndLeaderProblem
                         Console.WriteLine(" ");
                
             }
+            Console.WriteLine("!!!!*****!!!!!Player1 reach the winning position!!!!*****!!!!!");
         }
     }
 }
